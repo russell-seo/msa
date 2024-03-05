@@ -19,8 +19,11 @@
   - 트랜잭션 완료를 2(N) 단계를 거쳐서 결정
   - Commit Request(1Phase) -> 정말 Commit 해되 되니?? -> 성공 시 Commit/ 실패시 Rollback(2Phase)
  
-- Compensating Transactions(보상 트랜잭션)
+- `Compensating Transactions(보상 트랜잭션)`
   - 특정 요청과 그 요청에 대해 정상적이고 완전히 종료된 행동을 그 이전 상태로 되돌리기 위한 행동
+    ![image](https://github.com/russell-seo/msa/assets/79154652/e340f02c-55d3-4f51-b757-6d5e12521405)
+
  
-- Saga Pattern(사가 패턴)
+- `Saga Pattern(사가 패턴)`
   - 트랜잭션의 선 후 관계를 사전에 정의하고 필요와 경우에 따라 Cordinator가 보상 트랜잭션을 이용, 관리하여 분산 시스템 환경에서 트랜잭션을 구현하기 위한 패턴
+![image](https://github.com/russell-seo/msa/assets/79154652/7aaf6375-9a9b-4644-b298-25ea82b8d09a)
